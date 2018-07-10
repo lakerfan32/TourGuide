@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+
+    <!-- About Fragment -->
+    <string name="about">About</string>
+
+    <!-- City Fragment -->
+    <string name="south_beach">South Beach</string>
+
+    <string name="vizcaya">Vizcaya Museum and Gardens</string>
+
+    <string name="calle_ocho">Calle Ocho</string>
+
+    <string name="cape_florida_lighthouse">Cape Florida Lighthouse</string>
+
+
+    <!-- Shop Fragment -->
+    <string name="bayside">Bayside Marketplace</string>
+
+    <string name="bal_harbour">Bal Harbour Shops</string>
+
+    <string name="lincoln_road">Lincoln Road Mall</string>
+
+
+    <!-- Nature Fragment -->
+    <string name="beaches">Beaches</string>
+
+    <string name="everglades">Everglades National Park</string>
+
+    <string name="key_west">Key West</string>
+
+    <string name="venetian_pool">Venetian Pool</string>
+
+
+    <!-- Social Fragment -->
+    <string name="clevelander">Clevelander Hotel</string>
+
+    <string name="liv">LIV Nightclub</string>
+
+    <string name="nikki_beach">Nikki Beach Miami</string>
+
+
+</resources>
