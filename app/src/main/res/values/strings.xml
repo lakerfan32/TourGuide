@@ -5,8 +5,24 @@
     <string name="image_description">Miami image</string>
     <string name="image_background_description">Background for opaque image</string>
 
+    <!-- Fragment name for About tab -->
+    <string name="fragment_about">About</string>
+
+    <!-- Fragment name for City tab -->
+    <string name="fragment_city">City</string>
+
+    <!-- Fragment name for Shop tab -->
+    <string name="fragment_shop">Shop</string>
+
+    <!-- Fragment name for Nature tab -->
+    <string name="fragment_nature">Nature</string>
+
+    <!-- Fragment name for Social tab -->
+    <string name="fragment_social">Social</string>
+
     <!-- About Fragment -->
     <string name="about">About</string>
+    <string name="miami_name">Miami</string>
     <string name="miami_fact">Miami is an international city at the southeastern tip of the
         United States.</string>
     <string name="miami_description">Miami is a major metropolitan city located in the southeastern
@@ -16,6 +32,7 @@
         hours away from major cities in Latin America and the Caribbean Islands.  Furthermore, a
         vast influx of immigrants for decades from these countries have helped shape Miami’s
         uniqueness and flavor compared to other cities in the U.S.</string>
+    <string name="miami_location">100 SE 2nd St, Miami, FL 33131</string>
 
     <!-- City Fragment -->
     <string name="south_beach_name">South Beach</string>
@@ -25,12 +42,14 @@
         scene around its happening nightspots and celebrity-chef eateries.  Ocean Drive is
         well known for its art deco style architecture and several outdoor cafes.  South Beach has
         been dubbed the American Riviera.</string>
+    <string name="south_beach_location">South Beach, Miami Beach, FL 33139</string>
 
     <string name="vizcaya_name">Vizcaya Museum and Gardens</string>
     <string name="vizcaya_fact">A taste of the Renaissance in the middle of a city.</string>
     <string name="vizcaya_description">Built in 1916 as a winter retreat, this lavish villa is a
         tribute to the Italian Renaissance. The museum contains much of the original furnishings
         and artwork, and is surrounded by lush, formal gardens.</string>
+    <string name="vizcaya_location">3251 S Miami Ave, Miami, FL 33129</string>
 
     <string name="calle_ocho_name">Calle Ocho</string>
     <string name="calle_ocho_fact">Celebrate Latin culture and history in Miami.</string>
@@ -39,6 +58,7 @@
         heart of the vibrant Cuban community in Miami, who have influenced the city throughout the
         decades.  The neighborhood contains various cafes, restaurants and art galleries that
         transform one into a different time and place.</string>
+    <string name="calle_ocho_location">SW 8th St, Miami, FL 33135</string>
 
     <!-- Shop Fragment -->
     <string name="bayside_name">Bayside Marketplace</string>
@@ -46,6 +66,7 @@
     <string name="bayside_description">Bayside Marketplace is two-story open air marketplace located
         in the Downtown Miami area. The banks of Biscayne Bay wrap around the property with the
         City of Miami marina at its side.</string>
+    <string name="bayside_location">401 Biscayne Blvd, Miami, FL 33132</string>
 
     <string name="bal_harbour_name">Bal Harbour Shops</string>
     <string name="bal_harbour_fact">Shop at more than 100 luxury retailers in a tranquil
@@ -53,6 +74,7 @@
     <string name="bal_harbour_description">Bal Harbour Shops is an exquisite collection of designer
         boutiques and restaurants in a tropical garden setting. An internationally renowned shopping
         destination, it’s a favorite playground for socialites, fashionistas, and celebrities.</string>
+    <string name="bal_harbour_location">Bal Harbour, FL 33154</string>
 
     <string name="lincoln_road_name">Lincoln Road Mall</string>
     <string name="lincoln_road_fact">The place to shop, eat, drink, and people watch.</string>
@@ -60,6 +82,7 @@
         Mall is South Florida’s premier outdoor shopping, dining, and entertainment destination.
         This mile long, pedestrian-only promenade boasts a happening street scene with throngs of
         local and out-of-town visitors, excellent shopping, and terrific dining options.</string>
+    <string name="lincoln_road_location">Lincoln Rd, Miami Beach, FL 33139</string>
 
     <!-- Nature Fragment -->
     <string name="beaches_name">Beaches</string>
@@ -69,6 +92,7 @@
         family, seniors, or gay singles; some to make you forget you\'re in the city, others darkened
         by huge condominiums. Whatever type of beach vacation you're looking for, you'll find it in
         one of Miami\'s several beaches.</string>
+    <string name="beaches_location">1 Washington Ave, Miami Beach, FL 33139</string>
 
     <string name="everglades_name">Everglades National Park</string>
     <string name="everglades_fact">The Everglades comprise the largest subtropical wetland
@@ -78,12 +102,14 @@
         slow-moving river, the Everglades is made up of coastal mangroves, sawgrass marshes and pine
         flatwoods that are home to hundreds of animal species.  Airboat rides and tours are the most
         popular ways to see and experience this natural beauty.</string>
+    <string name="everglades_location">40001 State Hwy 9336, Homestead, FL 33034</string>
 
     <string name="key_west_name">Key West</string>
     <string name="key_west_fact">The Atlantic Ocean and Gulf of Mexico meet here.</string>
     <string name="key_west_description">The southernmost point in the United States, just 90 miles
         north of Cuba, Key West is famous for watersports, lively nightlife, beaches and historic
         sites.</string>
+    <string name="key_west_location">Whitehead St and South Street, Key West, FL 33040</string>
 
     <string name="venetian_pool_name">Venetian Pool</string>
     <string name="venetian_pool_fact">The only swimming pool listed on the National Register of Historic
@@ -91,6 +117,7 @@
     <string name="venetian_pool_description">A Venetian-style lagoon carved out of coral rock, this
         historic landmark and swimming pool features caves, stone bridges and waterfalls, creating a
         tropical backdrop.</string>
+    <string name="venetian_pool_location">2701 De Soto Blvd, Coral Gables, FL 33134</string>
 
     <!-- Social Fragment -->
     <string name="clevelander_name">Clevelander Hotel</string>
@@ -99,6 +126,7 @@
     <string name="clevelander_description">Party like a South Beach rockstar when you book a room at
         the Clevelander Hotel.  It\’s located in the middle of Ocean Drive.  The pool and patio bar
         is famous for people watching day or night.</string>
+    <string name="clevelander_location">1020 Ocean Dr, Miami Beach, FL 33139</string>
 
     <string name="liv_name">LIV Nightclub</string>
     <string name="liv_fact">The 18,000 square foot club is one of Miami\'s most exclusive clubs.</string>
@@ -106,6 +134,7 @@
         nightclub venues in the world and has redefined Miami Beach and pioneered the nightlife
         experience.  The trendy, opulent Fontainebleau Hotel club is where DJs spin at parties that
         attract celebs and VIPs.</string>
+    <string name="liv_location">4441 Collins Ave, Miami Beach, FL 33140</string>
 
     <string name="nikki_beach_name">Nikki Beach Miami</string>
     <string name="nikki_beach_fact">Soak up the sun on luxurious day beds while enjoying lunch and
@@ -114,5 +143,9 @@
         plus a DJ-fueled scene at night.  One of South Beach’s most elite clubs, Nikki Beach Miami
         is located directly on the beach.  With torches, palm trees, sand under your feet and the
         sky as your roof, few things get better than this.</string>
+    <string name="nikki_beach_location">1 Ocean Dr, Miami Beach, FL 33139</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

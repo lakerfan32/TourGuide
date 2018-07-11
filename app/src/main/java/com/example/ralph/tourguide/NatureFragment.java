@@ -36,16 +36,20 @@ public class NatureFragment extends Fragment {
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.beaches_name),
                 getContext().getString(R.string.beaches_fact), R.drawable.beaches,
-                getContext().getString(R.string.beaches_description), getContext().getString(R.string.aquarium_location)));
+                getContext().getString(R.string.beaches_description),
+                getContext().getString(R.string.beaches_location)));
         info.add(new Info(getContext().getString(R.string.everglades_name),
                 getContext().getString(R.string.everglades_fact), R.drawable.everglades,
-                getContext().getString(R.string.everglades_description), getContext().getString(R.string.marine_tours_location)));
+                getContext().getString(R.string.everglades_description),
+                getContext().getString(R.string.everglades_location)));
         info.add(new Info(getContext().getString(R.string.venetian_pool_name),
                 getContext().getString(R.string.venetian_pool_fact), R.drawable.venetian_pool,
-                getContext().getString(R.string.venetian_pool_description), getContext().getString(R.string.tradewinds_location)));
+                getContext().getString(R.string.venetian_pool_description),
+                getContext().getString(R.string.venetian_pool_location)));
         info.add(new Info(getContext().getString(R.string.key_west_name),
                 getContext().getString(R.string.key_west_fact), R.drawable.key_west,
-                getContext().getString(R.string.key_west_description), getContext().getString(R.string.tradewinds_location)));
+                getContext().getString(R.string.key_west_description),
+                getContext().getString(R.string.key_west_location)));
 
         /**
          * Create an {@link InfoAdapter} and populates with data sourced from {@link Info}.

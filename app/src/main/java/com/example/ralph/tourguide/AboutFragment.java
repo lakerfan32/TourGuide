@@ -12,9 +12,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass that displays an ArrayList of Social scenes within Miami.
+ * A simple {@link Fragment} subclass that displays background information for the city of Miami.
  */
-public class SocialFragment extends Fragment {
+public class AboutFragment extends Fragment {
 
     // Creates keys for ListView item data
     public static final String KEY_NAME = "KEY_NAME";
@@ -23,7 +23,7 @@ public class SocialFragment extends Fragment {
     public static final String KEY_DRAWABLE = "KEY_DRAWABLE";
     public static final String KEY_DESCRIPTION = "KEY_DESCRIPTION";
 
-    public SocialFragment() {
+    public AboutFragment() {
         // Required empty public constructor
     }
 
@@ -32,20 +32,12 @@ public class SocialFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // Creates a list of social scene sites
+        // Creates a list of sites in the city
         final ArrayList<Info> info = new ArrayList<Info>();
-        info.add(new Info(getContext().getString(R.string.clevelander_name),
-                getContext().getString(R.string.clevelander_fact), R.drawable.clevelander,
-                getContext().getString(R.string.clevelander_description),
-                getContext().getString(R.string.clevelander_location)));
-        info.add(new Info(getContext().getString(R.string.liv_name),
-                getContext().getString(R.string.liv_fact), R.drawable.liv,
-                getContext().getString(R.string.liv_description),
-                getContext().getString(R.string.liv_location)));
-        info.add(new Info(getContext().getString(R.string.nikki_beach_name),
-                getContext().getString(R.string.nikki_beach_fact), R.drawable.nikki_beach,
-                getContext().getString(R.string.nikki_beach_description),
-                getContext().getString(R.string.nikki_beach_location)));
+        info.add(new Info(getContext().getString(R.string.miami_name),
+                getContext().getString(R.string.miami_fact), R.drawable.welcome,
+                getContext().getString(R.string.miami_description),
+                getContext().getString(R.string.miami_location)));
 
         /**
          * Create an {@link InfoAdapter} and populates with data sourced from {@link Info}.

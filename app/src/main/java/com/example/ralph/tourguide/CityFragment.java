@@ -37,13 +37,16 @@ public class CityFragment extends Fragment {
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.south_beach_name),
                 getContext().getString(R.string.south_beach_fact), R.drawable.south_beach,
-                getContext().getString(R.string.south_beach_description), getContext().getString(R.string.aquarium_location)));
+                getContext().getString(R.string.south_beach_description),
+                getContext().getString(R.string.south_beach_location)));
         info.add(new Info(getContext().getString(R.string.vizcaya_name),
                 getContext().getString(R.string.vizcaya_fact), R.drawable.vizcaya,
-                getContext().getString(R.string.vizcaya_description), getContext().getString(R.string.marine_tours_location)));
+                getContext().getString(R.string.vizcaya_description),
+                getContext().getString(R.string.vizcaya_location)));
         info.add(new Info(getContext().getString(R.string.calle_ocho_name),
                 getContext().getString(R.string.calle_ocho_fact), R.drawable.calle_ocho,
-                getContext().getString(R.string.calle_ocho_description), getContext().getString(R.string.tradewinds_location)));
+                getContext().getString(R.string.calle_ocho_description),
+                getContext().getString(R.string.calle_ocho_location)));
 
         /**
          * Create an {@link InfoAdapter} and populates with data sourced from {@link Info}.

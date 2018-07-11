@@ -36,13 +36,16 @@ public class ShopFragment extends Fragment {
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.bayside_name),
                 getContext().getString(R.string.bayside_fact), R.drawable.bayside,
-                getContext().getString(R.string.bayside_description), getContext().getString(R.string.aquarium_location)));
+                getContext().getString(R.string.bayside_description),
+                getContext().getString(R.string.bayside_location)));
         info.add(new Info(getContext().getString(R.string.bal_harbour_name),
                 getContext().getString(R.string.bal_harbour_fact), R.drawable.bal_harbour,
-                getContext().getString(R.string.bal_harbour_description), getContext().getString(R.string.marine_tours_location)));
+                getContext().getString(R.string.bal_harbour_description),
+                getContext().getString(R.string.bal_harbour_location)));
         info.add(new Info(getContext().getString(R.string.lincoln_road_name),
                 getContext().getString(R.string.lincoln_road_fact), R.drawable.lincoln_road,
-                getContext().getString(R.string.lincoln_road_description), getContext().getString(R.string.tradewinds_location)));
+                getContext().getString(R.string.lincoln_road_description),
+                getContext().getString(R.string.lincoln_road_location)));
 
         /**
          * Create an {@link InfoAdapter} and populates with data sourced from {@link Info}.
