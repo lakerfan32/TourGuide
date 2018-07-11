@@ -21,10 +21,8 @@ public class InfoAdapter extends ArrayAdapter<Info> {
     }
 
     // Class to hold ArrayList Views.
-    // Reference: https://dzone.com/articles/optimizing-your-listview
     static class ViewHolder {
         private TextView nameTextView;
-        private TextView distanceTextView;
         private TextView detailsTextView;
         private ImageView imageView;
     }
@@ -40,9 +38,8 @@ public class InfoAdapter extends ArrayAdapter<Info> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
             holder = new ViewHolder();
-            // Finds Name, Distance, and Details TextViews, as well as ImageView
+            // Finds Name, Details TextViews, as well as ImageView
             holder.nameTextView = (TextView) convertView.findViewById(R.id.name_text_view);
-            holder.distanceTextView = (TextView) convertView.findViewById(R.id.distance_text_view);
             holder.detailsTextView = (TextView) convertView.findViewById(R.id.details_text_view);
             holder.imageView = (ImageView) convertView.findViewById(R.id.image_view);
             convertView.setTag(holder);
@@ -52,9 +49,6 @@ public class InfoAdapter extends ArrayAdapter<Info> {
 
         // Sets the text to current Info object
         holder.nameTextView.setText(currentInfo.getName());
-
-        // Sets the text to current Info object
-        holder.distanceTextView.setText(currentInfo.getDistance());
 
         // Sets the text to current Info object
         holder.detailsTextView.setText(currentInfo.getDetails());

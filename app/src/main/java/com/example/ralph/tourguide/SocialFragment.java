@@ -1,6 +1,5 @@
 package com.example.ralph.tourguide;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,9 +12,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass that displays an ArrayList of sites in the city within Miami.
+ * A simple {@link Fragment} subclass that displays an ArrayList of Social scenes within Miami.
  */
-public class CityFragment extends Fragment {
+public class SocialFragment extends Fragment {
 
     // Creates keys for ListView item data
     public static final String KEY_NAME = "KEY_NAME";
@@ -24,7 +23,7 @@ public class CityFragment extends Fragment {
     public static final String KEY_DRAWABLE = "KEY_DRAWABLE";
     public static final String KEY_DESCRIPTION = "KEY_DESCRIPTION";
 
-    public CityFragment() {
+    public SocialFragment() {
         // Required empty public constructor
     }
 
@@ -33,17 +32,17 @@ public class CityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // Creates a list of sites in the city
+        // Creates a list of social scene sites
         final ArrayList<Info> info = new ArrayList<Info>();
-        info.add(new Info(getContext().getString(R.string.south_beach_name),
-                getContext().getString(R.string.south_beach_fact), R.drawable.south_beach,
-                getContext().getString(R.string.south_beach_description), getContext().getString(R.string.aquarium_location)));
-        info.add(new Info(getContext().getString(R.string.vizcaya_name),
-                getContext().getString(R.string.vizcaya_fact), R.drawable.vizcaya,
-                getContext().getString(R.string.vizcaya_description), getContext().getString(R.string.marine_tours_location)));
-        info.add(new Info(getContext().getString(R.string.calle_ocho_name),
-                getContext().getString(R.string.calle_ocho_fact), R.drawable.calle_ocho,
-                getContext().getString(R.string.calle_ocho_description), getContext().getString(R.string.tradewinds_location)));
+        info.add(new Info(getContext().getString(R.string.clevelander_name),
+                getContext().getString(R.string.clevelander_fact), R.drawable.clevelander,
+                getContext().getString(R.string.clevelander_description), getContext().getString(R.string.aquarium_location)));
+        info.add(new Info(getContext().getString(R.string.liv_name),
+                getContext().getString(R.string.liv_fact), R.drawable.liv,
+                getContext().getString(R.string.liv_description), getContext().getString(R.string.marine_tours_location)));
+        info.add(new Info(getContext().getString(R.string.nikki_beach_name),
+                getContext().getString(R.string.nikki_beach_fact), R.drawable.nikki_beach,
+                getContext().getString(R.string.nikki_beach_description), getContext().getString(R.string.tradewinds_location)));
 
         /**
          * Create an {@link InfoAdapter} and populates with data sourced from {@link Info}.
@@ -53,7 +52,7 @@ public class CityFragment extends Fragment {
         /**
          * Finds the {@link ListView} object in the view hierarchy of the {@link Activity}.
          * There is a view ID called list in the list_view.xml file.
-        */
+         */
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         /**

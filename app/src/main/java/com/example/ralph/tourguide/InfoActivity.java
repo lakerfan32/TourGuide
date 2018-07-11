@@ -11,12 +11,16 @@ import android.text.method.LinkMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import static com.example.ralph.tourguide.CityFragment.KEY_DESCRIPTION;
+import static com.example.ralph.tourguide.CityFragment.KEY_DRAWABLE;
+import static com.example.ralph.tourguide.CityFragment.KEY_FACT;
+import static com.example.ralph.tourguide.CityFragment.KEY_LOCATION;
+import static com.example.ralph.tourguide.CityFragment.KEY_NAME;
+
 /**
  * A {@link InfoActivity} that displays the data of an object from {@link Info}.
- * Data unique to this activity is description and location to provide more details about
- * a particular object.
- *
- * Map pin icon courtesy of Material icons: https://material.io/tools/icons/?icon=place&style=baseline
+ * Data unique to this site is a fact and description to provide more information
+ * about a particular object.
  */
 
 public class InfoActivity extends AppCompatActivity {
@@ -24,11 +28,11 @@ public class InfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_info);
 
         String currentName = "";
         String currentLocation = "";
-        String currentDetails = "";
+        String currentFact = "";
         String currentDescription = "";
 
         // Gets String extras from clicked ListView item
@@ -36,12 +40,11 @@ public class InfoActivity extends AppCompatActivity {
         if (null != intent) {
             currentName = intent.getStringExtra(KEY_NAME);
             currentLocation = intent.getStringExtra(KEY_LOCATION);
-            currentDetails = intent.getStringExtra(KEY_DETAILS);
+            currentFact = intent.getStringExtra(KEY_FACT);
             currentDescription = intent.getStringExtra(KEY_DESCRIPTION);
         }
 
         // Gets image resource ID from clicked ListView item and stores in currentDrawable variable
-        // Reference: https://stackoverflow.com/questions/1392521/how-can-i-get-image-resource-id-and-send-it-to-other-activity-in-android
         Bundle extras = getIntent().getExtras();
         int currentDrawable = extras.getInt(KEY_DRAWABLE);
 
@@ -59,8 +62,8 @@ public class InfoActivity extends AppCompatActivity {
         currentLocationText.setMovementMethod(LinkMovementMethod.getInstance());
 
         // Finds TextView and sets text to clicked ListView item object
-        TextView currentDetailsText = (TextView) findViewById(R.id.current_details);
-        currentDetailsText.setText(currentDetails);
+        TextView currentFactText = (TextView) findViewById(R.id.current_fact);
+        currentFactText.setText(currentFact);
 
         // Finds TextView and sets text to clicked ListView item object
         TextView currentDescriptionText = (TextView) findViewById(R.id.current_description);

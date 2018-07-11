@@ -10,11 +10,8 @@ public class Info {
     /** Name for ListView item object **/
     private String mName;
 
-    /** Distance of object from Newport, OR **/
-    private String mDistance;
-
     /** Quick details for object **/
-    private String mDetails;
+    private String mFact;
 
     /** More detailed description of object, displayed in {@link InfoActivity} **/
     private String mDescription;
@@ -30,20 +27,17 @@ public class Info {
      *
      * @param name is the title or name associated with Info object
      *
-     * @param distance is how far the object is in miles from Newport, OR
+     * @param fact is a short one-line fact about the object to draw interest from the user
      *
-     * @param details is a short one-line detail about the object to draw interest from the user
+     * @param imageResourceId is the resource ID associated with the object image
      *
-     * @param imageResourceId is the resource ID associated with the object
-     *
-     * @param description is a small paragraph about the object, either fun facts or info about amenities
+     * @param description is the information about the object
      *
      * @param location is the address of the object, usually a hyperlink leading to a Maps app
      */
-    public Info(String name, String distance, String details, int imageResourceId, String description, String location) {
+    public Info(String name, String fact, int imageResourceId, String description, String location) {
         mName = name;
-        mDistance = distance;
-        mDetails = details;
+        mFact = fact;
         mImageResourceId = imageResourceId;
         mDescription = description;
         mLocation = location;
@@ -54,14 +48,9 @@ public class Info {
         return mName;
     }
 
-    /** Get the Distance of the object **/
-    public String getDistance() {
-        return mDistance;
-    }
-
-    /** Get the Details of the object **/
+    /** Get the Facts on the object **/
     public String getDetails() {
-        return mDetails;
+        return mFact;
     }
 
     /** Get the Description of the object **/

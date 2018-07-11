@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            tools:src="@drawable/newport" />
+            tools:src="@drawable/welcome" />
 
         <TextView
             android:id="@+id/current_name"
@@ -36,33 +36,33 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/map_pin"
+                android:id="@+id/place_pin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/map_pin_margin_right"
-                android:layout_marginEnd="@dimen/map_pin_margin_right"
-                android:layout_marginTop="@dimen/map_pin_margin_top"
-                android:src="@drawable/mappin" />
+                android:layout_marginRight="@dimen/place_pin_margin_right"
+                android:layout_marginEnd="@dimen/place_pin_margin_right"
+                android:layout_marginTop="@dimen/place_pin_margin_top"
+                android:src="@drawable/place_pin" />
 
             <TextView
                 android:id="@+id/current_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_top"
-                android:layout_toRightOf="@id/map_pin"
-                android:layout_toEndOf="@id/map_pin"
+                android:layout_toRightOf="@id/place_pin"
+                android:layout_toEndOf="@id/place_pin"
                 android:autoLink="map"
                 style="@style/DetailsTextColor"
                 tools:text="current location" />
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/current_details"
+            android:id="@+id/current_fact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_top"
             style="@style/DetailsTextColor"
-            tools:text="current details" />
+            tools:text="current fact" />
 
         <TextView
             android:id="@+id/current_description"
@@ -71,6 +71,6 @@
             android:layout_marginTop="@dimen/margin_top"
             android:autoLink="web"
             style="@style/DetailsTextColor"
-            tools:text="current details" />
+            tools:text="current description" />
     </LinearLayout>
 </ScrollView>

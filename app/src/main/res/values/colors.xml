@@ -9,6 +9,8 @@
     <!-- Primary color of the accent -->
     <color name="colorAccent">#7C4DFF</color>
 
+    <color name="opaque">#52d2d2d2</color>
+
     <!-- Color of the tabs -->
     <color name="tab">#5003A9F4</color>
 

@@ -24,7 +24,7 @@
                 android:layout_height="@dimen/card_view_image_height"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/aquarium" />
+                android:src="@drawable/welcome" />
 
             <ImageView
                 android:contentDescription="@string/image_background_description"
