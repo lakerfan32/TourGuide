@@ -32,7 +32,13 @@ public class SocialFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // Creates a list of social scene sites
+        /**
+         * Creates a list of social scene sites
+         * Clevelander Hotel photo courtesy of https://www.clevelander.com/photo-gallery.htm
+         * LIV Nightclub photo courtesy of https://meetselect.com/dining/miami-beach/liv
+         * Nikki Beach Miami photo courtesy of http://www.elmundo.es/album/viajes/
+         *      el-baul/2017/07/27/59688c0c46163ff1618b45d2_1.html
+         */
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.clevelander_name),
                 getContext().getString(R.string.clevelander_fact), R.drawable.clevelander,

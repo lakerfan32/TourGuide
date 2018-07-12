@@ -33,7 +33,7 @@ public class Info {
      *
      * @param description is the information about the object
      *
-     * @param location is the address of the object, usually a hyperlink leading to a Maps app
+     * @param location is the address of the object via a hyperlink to a Maps app
      */
     public Info(String name, String fact, int imageResourceId, String description, String location) {
         mName = name;

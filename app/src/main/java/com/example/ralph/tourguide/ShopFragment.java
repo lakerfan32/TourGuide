@@ -32,7 +32,15 @@ public class ShopFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // Creates a list of shopping sites
+        /**
+         * Creates a list of shopping sites
+         * Bayside Marketplace photo courtesy of https://www.miami.com/en-espanol/
+         *      bayside-marketplace-22510/
+         * Bal Harbour Shops photo courtesy of https://sunnyislesmiamirealestateblog.com/
+         *      profits-are-up-for-bal-harbour-shops/
+         * Lincoln Road Mall photo courtesy of https://www.miami.com/things-to-do-in-miami/
+         *      you-forgot-about-lincoln-road-heres-why-you-should-go-back-even-if-youre-not-a-tourist-186615/
+         */
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.bayside_name),
                 getContext().getString(R.string.bayside_fact), R.drawable.bayside,

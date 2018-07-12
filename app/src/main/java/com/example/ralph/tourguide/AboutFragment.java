@@ -32,7 +32,10 @@ public class AboutFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // Creates a list of sites in the city
+        /**
+         * Creates a single view introduction to the city of Miami
+         * Welcome to Miami photo courtesy of https://lulubellelife.com/2018/02/19/welcome-to-miami/
+         */
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.miami_name),
                 getContext().getString(R.string.miami_fact), R.drawable.welcome,

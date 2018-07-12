@@ -33,7 +33,14 @@ public class CityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // Creates a list of sites in the city
+        /**
+         * Creates a list of sites in the city of Miami
+         * South Beach photo courtesy of http://www.miamiandbeaches.com/places-to-see/
+         *      south-beach-art-deco-district
+         * Vizcaya Museum and Gardens photo courtesy of http://www.miamiandbeaches.com/arts/
+         *      vizcaya-museum-and-gardens/100789
+         * Calle Ocho photo courtesy of https://www.mebymelia.com/destination-guide/little-havana/
+         */
         final ArrayList<Info> info = new ArrayList<Info>();
         info.add(new Info(getContext().getString(R.string.south_beach_name),
                 getContext().getString(R.string.south_beach_fact), R.drawable.south_beach,
